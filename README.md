@@ -42,7 +42,10 @@ python speechapi.py
 #### 1. Click Headphone Button
 <img src="https://i.postimg.cc/Jzpy8d5J/click.png" height="200" align="center">
 
-#### 2. Type in browser console
+#### 2. Inspect Play Button
+<img src="https://i.postimg.cc/W1BTZBj0/click.png" height="200" align="center">
+
+#### 3. Type in browser console
 ```
 document.querySelector('#audio-source').getAttribute('src')
 ```

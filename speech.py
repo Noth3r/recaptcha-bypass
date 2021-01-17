@@ -28,7 +28,7 @@ def get_audio():
     open('temp.mp3', 'wb').write(r.content)
     print('Process : Convert File')
     subprocess.call(['ffmpeg', '-i', 'temp.mp3',
-                     'temp.wav'],  stdout=subprocess.DEVNULL,
+                     'temp.wav', '-y'],  stdout=subprocess.DEVNULL,
                     stderr=subprocess.STDOUT)
     os.remove('temp.mp3')
 
